@@ -1,0 +1,15 @@
+/* pages/goodsdetail/goodsdetail.wxss */
+
+.goods-detail-container{
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  align-items: center;
+  flex-wrap:wrap;
+  box-sizing: content-box;
+   /* padding: 24rpx;  */
+}
+image {
+  width: 720rpx;
+}

@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="signboard">
+        <view>
+            <view class="board-title">{{shopInfo.title}}</view>
+            <view class="board-desc">{{shopInfo.desc}}</view>
+        </view>
+        <view>
+            <image class="board-icon" src="{{shopInfo.icon}}" mode="aspectFit"></image>
+        </view>
+    </view>
+    <view class="delimiter"></view>
+    <view class='contact-info-bar' bindtap='viewLocation'>
+        <image class='contact-icon-img' src='../../image/WechatIMG116.png'></image>
+        <view class='contact-info-text'>{{shopInfo.addr}}</view>
+        <image class='contact-access-img' src='../../image/right65.png'></image>
+    </view>
+    <view class='contact-info-bar'>
+        <image class='contact-icon-img' src='../../image/WechatIMG117.png'></image>
+        <view class='contact-info-text'>{{shopInfo.time}}</view>
+    </view>
+    <view class='contact-info-bar' bindtap="makePhoneCall">
+        <image class='contact-icon-img' src='../../image/WechatIMG115.png'></image>
+        <view class='contact-info-text'>{{shopInfo.phone}}</view>
+        <image class='contact-access-img' src='../../image/right65.png'></image>
+    </view>
+    <view class='contact-info-bar'>
+        <image class='contact-icon-img' src='../../image/photos.png'></image>
+        <view class='contact-info-text'>门店照片</view>
+    </view>
+    <scroll-view class="scroll-container" scroll-x="true" bindscroll="scroll">
+        <image wx:for="{{shopInfo.shopdetail}}" src="{{item}}" wx:key="{{*this}}" data-src="{{item}}" bindtap="previewImage" class="scroll-item">
+        </image>
+    </scroll-view>
+</view>

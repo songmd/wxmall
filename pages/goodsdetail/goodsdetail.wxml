@@ -1,0 +1,5 @@
+<view class="goods-detail-container">
+    <view wx:for-items="{{goodstaped.detailimg}}" wx:key="{{index}}" data-id="{{index}}">
+        <image src="{{item}}"  mode="widthFix" lazy-load="true" />
+    </view>
+</view>
