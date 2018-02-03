@@ -40,5 +40,3 @@ App({
     shopInfoCB: [], //shop info 数据获取成功的回调函数列表
   }
 })
-
-
